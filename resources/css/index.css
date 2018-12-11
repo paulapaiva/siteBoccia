@@ -1,0 +1,32 @@
+
+  body {
+    display: flex;
+    min-height: 100px;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+    
+  h1 {
+  	text-align:center;
+
+  }
+  
+  .brand-logo {
+  	margin-left: 30px;
+
+  }
+
+  .content {
+
+    padding: 50px;
+  }
+
+  .contactUs {
+    padding: 100px;
+    margin: 80px;
+    background-color: #fafafa;
+
+  }
