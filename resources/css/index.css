@@ -1,79 +1,77 @@
 
   
-  html {
+html {
   font-family: 'Raleway', sans-serif;
-
-  }
-  
-    @media only screen and (min-width: 0) {
-      html {
-    }
-    font-size: 14px;
-  }
 }
 
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
 
-  main {
-    flex: 1 0 auto;
-  }
-    
-  h1 {
-    text-align:left;
-    margin-left: auto;
-    font-size: 2rem;
+main {
+  flex: 1 0 auto;
+}
+  
+h1 {
+  text-align:left;
+  margin-left: auto;
+  font-size: 2rem;
+}
 
-  }
+header {
+  margin-left: 10px;
+  margin-right: 90px;
+  font-weight: 300;
+}
 
-  header {
-    margin-left: 10px;
-    margin-right: 90px;
-    font-weight: 300;
-  }
+footer {
+  background-color: #ff5c5c;
 
-  footer {
-    background-color: #ff5c5c;
+}
 
-  }
-  .content {
-    padding: 5%;
+.content {
+  padding: 5%;
+}
 
-  }
-
-  .brand-logo {
-    margin-left: 30px;
-
-  }
+.brand-logo {
+  margin-left: 30px;
+}
 
 .card-image {
- 
   height: auto;
 }
 
-.card {
-  /*width:300px;*/
+.mobile-nav li a {
+  color: #ef5350;
 }
 
- .contactUs {
-    padding: 10%;
-    margin: 5%;
-    background-color: #fafafa;
+.card {
+/*width:300px;*/
+}
 
-  }
+.contactUs {
+  padding: 10%;
+  margin: 5%;
+  background-color: #fafafa;
+}
 
-  .input-field {
-    size: auto;
-  }
+.input-field {
+  size: auto;
+}
 
- .subtitle {
+.subtitle {
   text-align:left;
-    /*margin-left: auto;*/
-    font-size: 2rem;
+  /*margin-left: auto;*/
+  font-size: 2rem;
+  color:  #ef5350;
+}
 
-
- }
+nav .brand-logo {
+  font-size: 1.6rem;   
+  width: fit-content;
+  /*margin-left: 0px;*/
+}
