@@ -21,7 +21,7 @@
     margin-right: 90px;
   }
   .content {
-    padding: 50px;
+    padding: 5%;
 
   }
 
@@ -31,24 +31,28 @@
   }
 
 .card-image {
-  width:300px; /* you can use % */
+ 
   height: auto;
 }
 
 .card {
-  width:300px;
+  /*width:300px;*/
 }
 
  .contactUs {
-    padding: 100px;
-    margin: 80px;
+    padding: 10%;
+    margin: 5%;
     background-color: #fafafa;
 
   }
 
+  .input-field {
+    size: auto;
+  }
+
  .subtitle {
   text-align:left;
-    margin-left: auto;
+    /*margin-left: auto;*/
     font-size: 2rem;
 
  }
