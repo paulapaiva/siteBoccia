@@ -8,18 +8,18 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="resources/css/index.css"  media="screen,projection"/>
-
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</header>
 	<body>
-		<div class="header red">
-			 <nav class=" red darken-1">
-			    <div class="nav-wrapperred red darken-2">
+		<div class="header ">
+			 <nav class=" red lighten-1">
+			    <div class="nav-wrapperred">
 			      <a href="#" class="brand-logo">Projeto Boccia Adaptada</a>
 			      <ul id="nav-mobile" class="right hide-on-med-and-down">
 			        <li><a href="#knowus">Quem Somos</a></li>
-			        <li><a href="#knowus">O que é boccia</a></li>
+			        <li><a href="#boccia">O que é boccia?</a></li>
 			        <li><a href="#help">Como Ajudar</a></li>
 			        <li><a href="#gallery">Galeria</a></li>
 			        <li><a href="#contact">Fale Conosco</a></li>
@@ -29,29 +29,40 @@
 		</div>
 
 		<div class="content">
-			<div id="home">
-				<div class="card-panel subtitle">
-					<p class="subtitle">Home </p>
-				</div>
-			</div>
 			<div id="knowus">
-				<div class="card-panel subtitle">
+				<div class=" subtitle">
 					<p class="subtitle"> Quem Somos</p>
 				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ultricies velit, ac vulputate lectus. Fusce ut cursus nunc, eget varius massa. Integer nec venenatis ante. Donec et massa dictum, congue sapien ac, sagittis mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras auctor risus tempor dui mollis accumsan. Aliquam et turpis molestie, lacinia lorem nec, fringilla nunc. Etiam volutpat nisl vestibulum ante cursus, ac sagittis velit elementum. Nulla magna odio, fringilla ut accumsan eget, sodales eu odio. Nunc ac libero justo.</p>
 			</div>
-			
+			<div id="boccia">
+				<div class=" subtitle">
+					<p class="subtitle"> O que é boccia?</p>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ultricies velit, ac vulputate lectus. Fusce ut cursus nunc, eget varius massa. Integer nec venenatis ante. Donec et massa dictum, congue sapien ac, sagittis mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras auctor risus tempor dui mollis accumsan. Aliquam et turpis molestie, lacinia lorem nec, fringilla nunc. Etiam volutpat nisl vestibulum ante cursus, ac sagittis velit elementum. Nulla magna odio, fringilla ut accumsan eget, sodales eu odio. Nunc ac libero justo.</p>
+			</div>
+			<div id="boccia">
+				<div class=" subtitle">
+					<p class="subtitle"> Como ajudar</p>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ultricies velit, ac vulputate lectus. Fusce ut cursus nunc, eget varius massa. Integer nec venenatis ante. Donec et massa dictum, congue sapien ac, sagittis mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras auctor risus tempor dui mollis accumsan. Aliquam et turpis molestie, lacinia lorem nec, fringilla nunc. Etiam volutpat nisl vestibulum ante cursus, ac sagittis velit elementum. Nulla magna odio, fringilla ut accumsan eget, sodales eu odio. Nunc ac libero justo.</p>
+			</div>
 			<div id="gallery">
-				<div class="card-panel subtitle">
+				<div class="subtitle">
 					<p class="subtitle">Galeria</p>
 				</div>
 				<div class="row">
 				    <div class="card col s12 m3">
-				      <!-- <div class="card"> -->
 				        <div class="card-image">
 				          <img src="resources/images/img1.jpg">
 				          <span class="card-title">Card Title</span>
 				        </div>
-				    <!-- </div> -->
+				    </div>
+				    <div class="card col s12 m3">
+				        <div class="card-image">
+				          <img src="resources/images/img1.jpg">
+				          <span class="card-title">Card Title</span>
+				        </div>
 				    </div>
 				    <div class="card col s12 m3">
 				        <div class="card-image">
@@ -64,7 +75,7 @@
 				          <img src="resources/images/img1.jpg">
 				          <span class="card-title">Card Title</span>
 				        </div>
-				    </div>	
+				    </div>		
 			  	</div>
 			</div>
 			
@@ -72,15 +83,10 @@
 				<div class="contactUs">
 					<form class="col s12">
 				      	<div class="row">
-					        <div class="input-field col s6">
+					        <div class="input-field col s12 ">
 					        	<i class="material-icons prefix">account_circle</i>
 					          	<input placeholder="Placeholder" id="first_name" type="text" required="true" class="validate">
-
 					          <label for="first_name">Nome *</label>
-					        </div>
-					        <div class="input-field col s6">
-					          	<input id="last_name" type="text" required="true" class="validate">
-					          	<label for="last_name">Sobrenome *</label>
 					        </div>
 				     	 </div>
 				     	 <div class="row">
@@ -97,12 +103,12 @@
 				     	 </div>
 				     	 <div class="row">
 					     	 <div class="row">
-						        <div class="input-field col s6">
+						        <div class="input-field col s12 m6">
 							          <i class="material-icons prefix">phone</i>
 							          <input id="icon_prefix" type="text" class="validate">
 							          <label for="icon_prefix">Telefone</label>
 						        </div>
-						        <div class="input-field col s6">
+						        <div class="input-field col s12 m6">
 						          	<i class="material-icons prefix">mail</i>
 						       		<input id="email" type="email" required="true" class="validate">
 	          						<label for="email">Email *</label>
@@ -121,7 +127,7 @@
 		</div>
 	</div>
 		<div class="footer">
-			<footer class="page-footer red darken-1">
+			<footer class="page-footer  red lighten-1">
 		        <div class="container">
 		            <div class="row">
 		              <div class="col l6 s12">
