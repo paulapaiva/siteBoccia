@@ -220,6 +220,7 @@
 					success: function(data) {
 						$contactForm.find('.alert--loading').hide();
 						$contactForm.append('<div class="alert alert--success">Mensagem enviada!</div>');
+						$contactForm.reset();
 					},
 					error: function(err) {
 						$contactForm.find('.alert--loading').hide();
