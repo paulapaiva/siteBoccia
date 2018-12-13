@@ -112,7 +112,7 @@
 					<p class="subtitle">Fale conosco</p>
 				</div>
 				<div class="contactUs">
-					<form class="col s12" method="POST" action="https://formspree.io/paulapaivamoreira@yahoo.com" name="form" >
+					<form class="col s12" method="POST" name="form" >
 				      	<div class="row">
 					        <div class="input-field col s12 ">
 					        	<i class="material-icons prefix">account_circle</i>
@@ -198,9 +198,10 @@
 			      closeOnClick: true
 			    });
 
-    $('select').material_select();
+   			 $('select').material_select();
 
 			});
+
 			$("#sendMessage").on("click", function() {
 			    $.ajax({
 			        url: "//formspree.io/paulapaivamoreira@yahoo.com", 
