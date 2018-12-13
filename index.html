@@ -151,7 +151,7 @@
 						          	<label for="icon_prefix2">Mensagem *</label>
 						        </div>
 						  	</div>
-					     <button class="btn waves-effect light-blue darken-3 waves-light" type="submit" name="submit" value="submit">Enviar
+					     <button class="btn waves-effect light-blue darken-3 waves-light" id="sendMessage" type="submit" name="submit" value="submit">Enviar
 	    					<i class="material-icons right">send</i>
 	 				 	</button>
 				     </form>
@@ -201,7 +201,14 @@
     $('select').material_select();
 
 			});
-			
+			$("#sendMessage").on("click", function() {
+			    $.ajax({
+			        url: "//formspree.io/paulapaivamoreira@yahoo.com", 
+			        method: "POST",
+			        data: {message: "Mensagem enviada!"},
+			        dataType: "json"
+			    });
+			});
 	 </script>
 	</body>
 </html>
