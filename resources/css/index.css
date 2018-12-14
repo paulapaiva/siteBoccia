@@ -61,6 +61,7 @@ footer {
 /*width:300px;*/
 }
 
+
 .contactUs {
   padding: 10%;
   margin: 5%;
@@ -83,9 +84,26 @@ nav .brand-logo {
   width: fit-content;
   /*margin-left: 0px;*/
 }
+ 
+ .parallax-conatiner {
+  padding: 0px;
+
+ }
+ 
+.parallax-container .parallax img {
+    position: absolute;
+      opacity: 1;
+
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+}
 
 @media only screen and (max-width: 993px) {
   .logo-boccia {
     height: 90px;
+  }
+  .parallax img {
+    max-width: 183%;
   }
 }

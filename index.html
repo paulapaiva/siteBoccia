@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		 <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="resources/css/index.css"  media="screen,projection"/>
@@ -42,8 +42,11 @@
 		        <li><a href="#contact">Fale Conosco</a></li>
 			</ul>
 		</div>
-		
+		<div class="parallax-container">
+	      	<div class="parallax"><img src="resources/images/boccia1.jpg"></div>
+	    </div>
 		<div class="content">
+		  
 			<img class="logo-boccia" src="logo2.jpeg">
 			<div id="knowus">
 				<div class=" subtitle">
@@ -51,6 +54,11 @@
 				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ultricies velit, ac vulputate lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ultricies velit, ac vulputate lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ultricies velit, ac vulputate lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ultricies velit, ac vulputate lectus. Fusce ut cursus nunc, eget varius massa. Integer nec venenatis ante. Donec et massa dictum, congue sapien ac, sagittis mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras auctor risus tempor dui mollis accumsan. Aliquam et turpis molestie, lacinia lorem nec, fringilla nunc. Etiam volutpat nisl vestibulum ante cursus, ac sagittis velit elementum. Nulla magna odio, fringilla ut accumsan eget, sodales eu odio. Nunc ac libero justo.</p>
 			</div>
+		</div>
+		<div class="parallax-container">
+	      	<div class="parallax"><img src="resources/images/boccia1.jpg"></div>
+	    </div>
+	    <div class="content">
 			<div id="boccia">
 				<div class=" subtitle">
 					<p class="subtitle"> O que é boccia?</p>
@@ -116,7 +124,7 @@
 				      	<div class="row">
 					        <div class="input-field col s12 ">
 					        	<i class="material-icons prefix">account_circle</i>
-					          	<input placeholder="Placeholder" name="first_name" id="first_name" type="text" required="true" class="validate">
+					          	<input name="first_name" id="first_name" type="text" required="true" class="validate">
 					          <label for="first_name">Nome *</label>
 					        </div>
 				     	 </div>
@@ -136,10 +144,10 @@
 				     	 	<div class="input-field col s12">
 							    <select name="contact_reason">
 							      	<option value="" disabled selected>Selecione</option>
-							      	<option value="1">Quero ser um voluntário!</option>
-							      	<option value="2">Dúvidas</option>
-							      	<option value="3">Sugestões</option>
-							      	<option value="4">Outro</option>
+							      	<option value="voluntario">Quero ser um voluntário!</option>
+							      	<option value="duvidas">Dúvidas</option>
+							      	<option value="sugestoes">Sugestões</option>
+							      	<option value="outro">Outro</option>
 							    </select>
 							    <label>Motivo de contato</label>
 							 </div>
@@ -192,17 +200,19 @@
 		</div>
 		
 	      <!--JavaScript at end of body for optimized loading-->
-	    <script type="text/javascript" src="resources/js/materialize.min.js"></script>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <!-- <script type="text/javascript" src="resources/js/materialize.min.js"></script> -->
 	    <script type="text/javascript" src="resources/js/index.js"></script>
- 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	    <script>
 			$( document ).ready(function(){
 				$('.button-collapse').sideNav({
-			      closeOnClick: true
-			    });
-
-   			 $('select').material_select();
+			      		closeOnClick: true
+			    	});
+			    $('.parallax').parallax();
+   			 	$('select').material_select();
 
 			});
 
@@ -226,8 +236,8 @@
 						$contactForm.find('.alert--loading').hide();
 						$contactForm.append('<div class="alert alert--error">Ops, ocorreu um problema...</div>');
 					}
-	});
-});
+				});
+			});
 	 </script>
 	</body>
 </html>
