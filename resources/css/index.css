@@ -33,6 +33,10 @@ footer {
 
 }
 
+.carousel .carousel-item {
+  visibility: visible;
+}
+
 .content {
   padding: 5%;
 }
@@ -104,4 +108,14 @@ nav .brand-logo {
     height: 90px;
   }
  
+}
+@media only screen and (min-width: 993px) {
+  .carousel {
+    height: 600px;
+  }
+
+  .carousel .carousel-item {
+    width: 400px !important;
+  }
+
 }
