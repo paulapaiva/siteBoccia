@@ -35,6 +35,9 @@ footer {
 
 .carousel .carousel-item {
   visibility: visible;
+  width: 50%;
+  height: auto;
+
 }
 
 .content {
@@ -111,11 +114,12 @@ nav .brand-logo {
 }
 @media only screen and (min-width: 993px) {
   .carousel {
-    height: 600px;
+    height: 1000px;
   }
 
   .carousel .carousel-item {
     width: 400px !important;
+
   }
 
 }
